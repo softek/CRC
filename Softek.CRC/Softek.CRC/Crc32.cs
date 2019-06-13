@@ -168,7 +168,7 @@ namespace Softek.CRC
 
             for (int i = 0; i < 32; i++)
             {
-                if ((polynomial & (1 << i)) == (1 << i))
+                if ((polynomial & (UInt32)(1 << i)) == (UInt32)(1 << i))
                     returnPolynomial += (UInt32)(1 << (31 - i));
             }
 
